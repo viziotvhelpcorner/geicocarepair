@@ -1,0 +1,47 @@
+{# Custom layout.html for Sphinx Project #}
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide for geico car repair claims, process, coverage details, and step-by-step repair assistance.">
+    <meta name="keywords" content="geico car repair, geico auto repair claim, car insurance repair process, accident claim guide">
+    <meta name="author" content="Admin">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Geico Car Repair – Complete Claims & Repair Guide">
+    <meta property="og:description" content="Learn how the geico car repair process works, how to file a claim, and how to get your vehicle repaired quickly.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ pathto('_static/favicon.png', 1) }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}">
+
+{% endblock %}
+
+
+{% block header %}
+<header style="background-color:#1f4fa3; padding:15px 0;">
+    <div style="width:90%; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+        <h1 style="color:#ffffff; margin:0; font-size:22px;">
+            Geico Car Repair Guide
+        </h1>
+        <nav>
+            <a href="{{ pathto(master_doc) }}" style="color:#ffffff; margin-left:15px; text-decoration:none;">Home</a>
+        </nav>
+    </div>
+</header>
+{% endblock %}
+
+
+{% block footer %}
+<footer style="background-color:#f2f2f2; padding:20px; text-align:center; margin-top:40px;">
+    <p style="margin:0; font-size:14px;">
+        © 2026 Geico Car Repair Guide. All rights reserved.
+    </p>
+</footer>
+{% endblock %}
